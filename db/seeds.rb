@@ -18,7 +18,7 @@ repos['results'].each do |h|
   movie = Movie.new(
     title: h['title'],
     overview: h['overview'],
-    poster_url: "https://image.tmdb.org/t/p#{h['poster_path']}",
+    poster_url: "https://image.tmdb.org/t/p/w400/#{h['poster_path']}",
     rating: h['vote_average']
   )
   movie.save!
